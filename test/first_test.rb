@@ -1,6 +1,6 @@
 require 'test/unit'
 
-class MyTest < Test::Unit::TestCase
+class FirstTest < Test::Unit::TestCase
 
   def setup
     # Do nothing
