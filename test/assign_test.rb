@@ -1,5 +1,3 @@
-require 'test/unit'
-
 class AssignTest < Test::Unit::TestCase
 
   def test_multi

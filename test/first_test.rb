@@ -1,5 +1,3 @@
-require 'test/unit'
-
 class FirstTest < Test::Unit::TestCase
 
   def setup
