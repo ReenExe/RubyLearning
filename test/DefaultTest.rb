@@ -9,6 +9,6 @@ class DefaultTest < Test::Unit::TestCase
   end
 
   def test_success
-    assert_true(true)
+    assert_equal(true, true)
   end
 end
