@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 Dir["./src/*.rb"].each {|file|
   require file
 }
