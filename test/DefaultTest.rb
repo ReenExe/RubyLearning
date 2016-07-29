@@ -1,4 +1,4 @@
-class FirstTest < Test::Unit::TestCase
+class DefaultTest < Test::Unit::TestCase
 
   def setup
     # Do nothing
