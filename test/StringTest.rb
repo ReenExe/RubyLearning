@@ -5,9 +5,12 @@ class StringTest < Test::Unit::TestCase
     end
 
     def testGetIndex
-        name = 'Reen';
+        name = 'ReenExe';
+        assert_equal(name.length, 7);
+        assert_equal(name.size, 7);
+
         assert_equal(name[0], 'R')
-        assert_equal(name[-1], 'n')
+        assert_equal(name[-1], 'e')
     end
 
 end
