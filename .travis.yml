@@ -1,2 +1,2 @@
 language: ruby
-script: 'test.rb'
+script: 'ruby test.rb'
