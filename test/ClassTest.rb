@@ -7,6 +7,8 @@ class ClassTest < Test::Unit::TestCase
     assert_equal(false.class, FalseClass)
     assert_equal(true.class, TrueClass)
     assert_equal(nil.class, NilClass)
+    assert_equal([].class, Array)
+    assert_equal({}.class, Hash)
   end
 
 end
