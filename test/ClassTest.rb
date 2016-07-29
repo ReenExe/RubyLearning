@@ -1,6 +1,6 @@
 class ClassTest < Test::Unit::TestCase
 
-  def test_class
+  def testGetClass
     assert_equal(1.class, Fixnum)
     assert_equal(1.0.class, Float)
     assert_equal('string'.class, String)

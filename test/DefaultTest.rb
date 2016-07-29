@@ -8,7 +8,7 @@ class DefaultTest < Test::Unit::TestCase
     # Do nothing
   end
 
-  def test_success
+  def testSuccess
     assert_equal(true, true)
   end
 end
