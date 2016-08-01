@@ -24,4 +24,11 @@ class AssignTest < Test::Unit::TestCase
     assert_equal(b, [2, 3])
   end
 
+  def testWrap
+    a, b, c = 1, [2, 3]
+    assert_equal(a, 1)
+    assert_equal(b, [2, 3])
+    assert_equal(c, nil)
+  end
+
 end
