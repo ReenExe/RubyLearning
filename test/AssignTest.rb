@@ -14,4 +14,14 @@ class AssignTest < Test::Unit::TestCase
     assert_equal(b, 1)
   end
 
+  def testOther
+    a, b = 1, 2, 3
+    assert_equal(a, 1)
+    assert_equal(b, 2)
+
+    a, *b = 1, 2, 3
+    assert_equal(a, 1)
+    assert_equal(b, [2, 3])
+  end
+
 end
