@@ -20,4 +20,9 @@ class StringTest < Test::Unit::TestCase
         assert_equal(name[-8], nil)
     end
 
+    def testMulti
+        result = 'Good!' * 3
+        assert_equal(result, 'Good!Good!Good!')
+    end
+
 end
