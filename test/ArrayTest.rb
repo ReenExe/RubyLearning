@@ -30,4 +30,14 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal(union, [1, 2, 3, 5, 7, 9])
   end
 
+  def testPush
+    array = []
+
+    array << 1
+    array << 2 << 3
+    array << 5 << 6 << 7
+
+    assert_equal(array, [1, 2, 3, 5, 6, 7])
+  end
+
 end
