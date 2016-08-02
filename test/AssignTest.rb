@@ -44,7 +44,7 @@ class AssignTest < Test::Unit::TestCase
   def testCondition
     value = 7
 
-    result = if value == 1 then
+    result = if value == 1
                'other'
              elsif value == 7
                'expect'
