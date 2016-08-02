@@ -41,4 +41,33 @@ class AssignTest < Test::Unit::TestCase
     assert_equal(c, [3])
   end
 
+  def testCondition
+    value = 7
+
+    result = if value == 1 then
+               'other'
+             elsif value == 7
+               'expect'
+             else
+               'other'
+             end
+
+    assert_equal(result, 'expect')
+  end
+
+  def testCase
+    value = 7
+
+    result = case value
+               when 1
+                 'other'
+               when 7
+                 'expect'
+               else
+                 'other'
+             end
+
+    assert_equal(result, 'expect')
+  end
+
 end
