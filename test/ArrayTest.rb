@@ -40,4 +40,12 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal(array, [1, 2, 3, 5, 6, 7])
   end
 
+  def testLength
+    array = []
+    assert_equal(array.length, 0)
+
+    array = [1]
+    assert_equal(array.length, 1)
+  end
+
 end
