@@ -15,6 +15,11 @@ class StringTest < Test::Unit::TestCase
     assert_equal(name[-1], 'e')
 
     assert_equal(name[0...7], 'ReenExe')
+    assert_equal(name[0..8], 'ReenExe')
+
+    assert_equal(name[0,7], 'ReenExe')
+    assert_equal(name[0,2], 'Re')
+    assert_equal(name[0,0], '')
 
     assert_equal(name[8], nil)
     assert_equal(name[-8], nil)
