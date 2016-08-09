@@ -30,6 +30,23 @@ class StringTest < Test::Unit::TestCase
     assert_equal(result, 'Good!Good!Good!')
   end
 
+  def testIndex
+    name = 'Alex'
+    assert_equal(name.index('A'), 0)
+    assert_equal(name.index('x'), 3)
+    assert_equal(name.index('a'), nil)
+    assert_equal(name.rindex('A'), 0)
+    assert_equal(name.rindex('x'), 3)
+
+    word = 'hello'
+    assert_equal(word.index('l'), 2)
+    assert_equal(word.rindex('l'), 3)
+  end
+
+  def testReverse
+    assert_equal('this'.reverse, 'siht')
+  end
+
   def testPush
     source = 'Little'
     source << ' ' << 'World' << ' ' << 'Born'
