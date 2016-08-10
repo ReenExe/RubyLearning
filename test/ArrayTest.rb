@@ -48,4 +48,10 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal(array.length, 1)
   end
 
+  def testJoin
+    array = [1, 2, 3]
+    assert_equal(array.join, '123')
+    assert_equal(array.join(' '), '1 2 3')
+  end
+
 end
