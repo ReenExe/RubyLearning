@@ -73,4 +73,11 @@ class StringTest < Test::Unit::TestCase
     assert_equal(value.split(', '), ['a', 'b', 'c'])
   end
 
+  def testCount
+    name = 'ReenExe'
+    assert_equal(name.count('R'), 1)
+    assert_equal(name.count('E'), 1)
+    assert_equal(name.count('e'), 3)
+  end
+
 end
