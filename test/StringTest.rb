@@ -67,4 +67,10 @@ class StringTest < Test::Unit::TestCase
     assert_equal(name.end_with?('exe'), false)
   end
 
+  def testSplit
+    value = 'a, b, c'
+    assert_equal(value.split, ['a,', 'b,', 'c'])
+    assert_equal(value.split(', '), ['a', 'b', 'c'])
+  end
+
 end
