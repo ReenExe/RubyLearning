@@ -54,4 +54,10 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal(array.join(' '), '1 2 3')
   end
 
+  def testClear
+    array = [1, 2, 3]
+    array.clear
+    assert_equal(array, [])
+  end
+
 end
