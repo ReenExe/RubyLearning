@@ -58,4 +58,13 @@ class StringTest < Test::Unit::TestCase
     assert_equal(source, 'LittleWorld')
   end
 
+  def testCompare
+    name = 'ReenExe'
+
+    assert_equal(name.start_with?('Reen'), true)
+    assert_equal(name.end_with?('Exe'), true)
+    assert_equal(name.start_with?('reen'), false)
+    assert_equal(name.end_with?('exe'), false)
+  end
+
 end
