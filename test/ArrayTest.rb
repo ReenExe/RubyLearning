@@ -60,4 +60,9 @@ class ArrayTest < Test::Unit::TestCase
     assert_equal(array, [])
   end
 
+  def testEmpty
+    assert_equal([].empty?, true)
+    assert_equal(['word'].empty?, false)
+  end
+
 end
