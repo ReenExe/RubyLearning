@@ -80,4 +80,9 @@ class StringTest < Test::Unit::TestCase
     assert_equal(name.count('e'), 3)
   end
 
+  def testEmpty
+    assert_equal(''.empty?, true)
+    assert_equal('word'.empty?, false)
+  end
+
 end
